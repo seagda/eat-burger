@@ -1,29 +1,34 @@
 <div class="container">
 	<div class="row">
-		<div class="col-sm-12 text-center" id="top-bar">
-			<img src="/assets/img/big-burger.png" alt="burger" />
-			<h1> What Burger do you desire? </h1>
+		<div class="col-sm-12 text-center" id="title-bar">
+			<img src="/assets/img/big-burger.png" width="350" alt="Burger photo by David Fedulov" />
+			<h1>The Burger Extends Life. The Burger Expands Consciousness. </h1>
 		</div>
+
+		
 		<div class="col-sm-6 text-center" class="task">
 			<div class="row">
 			  {{#each burger}}
 			  	{{#unless this.devoured}}
 				<div class="col-sm-9 text-center">
-					<pre>{{this.id}}. {{this.burger_name}}
-					</pre>
+					<p class="instructions">TO BE DEVOURED:</p>
+					<p class="eat-me">
+						{{this.id}}. {{this.burger_name}}
+					</p>
 				  		<!-- {{this.Date}} -->
 				</div>
 				<div class="col-sm-3 text-center">
-					<form class="button-size devour-form">
+					<form class="eat-it-form">
 						<input input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
-						<button type="submit" class="btn btn-default">Devour it!</button>
+						<button type="submit" class="btn btn-default devourButt">Devour</button>
 					</form>
 				</div>
 				{{/unless}}
 			  {{/each}}
 			</div>
 		</div>
-		<div class="col-sm-6 text-center" class="task">
+		<div class="col-sm-6 text-center" class="eaten">
+			<h2>IN YOUR BELLY:</h2>
 			  {{#each burger}}
 			  	{{#if this.devoured}}
 			  		<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly>
@@ -36,11 +41,12 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12 text-center enter_section">
+			<h2>What burger do you want:</h2>
 			<form action="/burgers/create" method="POST">
 				<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
-				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+				<button type="submit" class="btn btn-primary" id="my-burger-button">That's My Burger</button>
 			</form>
-			<p>Enter a burger you want to eat Click the "Submit" button.</p>
+
 		</div>
 	</div>
 </div>

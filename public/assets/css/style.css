@@ -1,11 +1,14 @@
 body {
   width: 99%;
   height: 900px;
-  background-color: #fc6;
+  background-image: url("/assets/img/simon-berger-unsplash.jpg");
+  background-size: cover;
+  background-repeat: nrepeat;
+  background-color: rgb(88, 62, 9);
 }
 
-#top-bar {
-  margin-top: 28px;
+#title-bar {
+  margin-top: 20px;
 }
 
 .spacing-reset {
@@ -48,21 +51,37 @@ body {
   font-size: 38px;
 }
 
-.task {
+.eaten {
   border-color: black;
   border-style: solid;
   border-width: 3px;
 }
 
-.button-size {
+.eat-it-form {
   padding-bottom: 20px;
 }
 
-#text-enter-button {
-  margin-top: 10px;
-  margin-bottom: 18px;
+#my-burger-button {
+  margin: 20px auto;
+  background-color:  rgb(18, 163, 4);
+}
+
+.devourButt {
+  background-color: rgb(233, 5, 5);
+  color:bisque;
 }
 
 h1 {
-  color: #f30;
+  color: rgb(75, 26, 14);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+  color: rgb(18, 163, 4);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.instructions {
+  color: rgb(233, 5, 5);
+  font-family:cursive;
 }
