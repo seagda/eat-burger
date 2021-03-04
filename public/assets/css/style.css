@@ -74,14 +74,16 @@ body {
 h1 {
   color: rgb(75, 26, 14);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 3px 3px rgb(18, 163, 4);
 }
 
 h2 {
   color: rgb(18, 163, 4);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 1px 1px rgb(75, 26, 14);
 }
 
 .instructions {
-  color: rgb(233, 5, 5);
+  color: rgb(75, 26, 14);
   font-family:cursive;
 }

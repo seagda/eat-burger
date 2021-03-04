@@ -11,7 +11,7 @@
 			  {{#each burger}}
 			  	{{#unless this.devoured}}
 				<div class="col-sm-9 text-center">
-					<p class="instructions">TO BE DEVOURED:</p>
+					<p class="instructions">EAT ME:</p>
 					<p class="eat-me">
 						{{this.id}}. {{this.burger_name}}
 					</p>
@@ -41,10 +41,10 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12 text-center enter_section">
-			<h2>What burger do you want:</h2>
+			<h2>Tell me of your burger, Usul...</h2>
 			<form action="/burgers/create" method="POST">
 				<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
-				<button type="submit" class="btn btn-primary" id="my-burger-button">That's My Burger</button>
+				<button type="submit" class="btn btn-primary" id="my-burger-button">Show Me The Burger</button>
 			</form>
 
 		</div>
